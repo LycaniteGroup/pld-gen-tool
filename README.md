@@ -28,9 +28,9 @@ chmod +x ./mkgen.sh
 ./mkgen.sh
 ```
 
-You will next be prompted with a message asking you to choose an Authentication method to login to your Github account.
+You will next be prompted with a message asking you to enter your Github token.
 
-Choose **Token** authentication.
+Enter your github **Token**.
 
 Next you will be asked to select the sprint you want to convert to Markdown.
 Once done the conversion will begin.

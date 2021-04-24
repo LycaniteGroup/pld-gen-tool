@@ -23,65 +23,58 @@ style = style_from_dict({
 
 if __name__ == '__main__':
 
-    authMethod = prompt({
-            'type': 'list',
-            'message': 'Select an Authentication method',
-            'name': 'authMethod',
-            'choices': ['Token'],
-        }, style=style)
+    result = prompt([
+        {
+            'type': 'input',
+            'message': 'Enter your Github Token',
+            'name': 'token',
+        },
+    ], style=style)
     
-    
-    github = None
-
-    if authMethod.get('authMethod') == 'Token':
-        result = prompt([
-            {
-                'type': 'input',
-                'message': 'Token',
-                'name': 'token',
-            },
-        ], style=style)
+    if result.get('token'):
 
         github = Github(result.get('token'))
 
-    organization = github.get_organization("LycaniteGroup")
+        organization = github.get_organization("LycaniteGroup")
 
-    sprints = []
-    sprintChoices = []
-    
-    for project in organization.get_projects():
-        if project.name.startswith('Sprint'):
-            sprints.append(project)
-            sprintChoices.append({
-                'name': project.name
-            })
-
-    questions = [
-        {
-            'type': 'list',
-            'message': 'Select a sprint',
-            'name': 'sprint',
-            'choices': sprintChoices,
-        }
-    ]
-
-    result = prompt(questions, style=style)
-    selectedSprint = None
-
-    if sprintName := result.get('sprint'):
-        for sprint in sprints:
-            if sprintName == sprint.name:
-                selectedSprint = Sprint(sprint)
-                break
-    
-    if selectedSprint:
-        dir = selectedSprint.getName().replace("/", "-")
-        Path('sprints/%s/' % dir).mkdir(parents=True, exist_ok=True)
+        sprints = []
+        sprintChoices = []
         
-        with open('sprints/%s/index.md' % dir, 'w') as file:
-            def write(str=''):
-                file.write(str+'\n')
-            sprint2Markdown(selectedSprint, write)
-        print('Generation done')
+        for project in organization.get_projects():
+            if project.name.startswith('Sprint'):
+                sprints.append(project)
+                sprintChoices.append({
+                    'name': project.name
+                })
+
+        questions = [
+            {
+                'type': 'list',
+                'message': 'Select a sprint',
+                'name': 'sprint',
+                'choices': sprintChoices,
+            }
+        ]
+
+        result = prompt(questions, style=style)
+        selectedSprint = None
+
+        if sprintName := result.get('sprint'):
+            for sprint in sprints:
+                if sprintName == sprint.name:
+                    selectedSprint = Sprint(sprint)
+                    break
+        
+        if selectedSprint:
+            dir = selectedSprint.getName().replace("/", "-")
+            Path('sprints/%s/' % dir).mkdir(parents=True, exist_ok=True)
+            
+            with open('sprints/%s/index.md' % dir, 'w') as file:
+                def write(str=''):
+                    file.write(str+'\n')
+                sprint2Markdown(selectedSprint, write)
+            print('Generation done')
+        else:
+            print('Generation cancelled')
     else:
         print('Generation cancelled')
