@@ -7,12 +7,14 @@ services:
       - ./build:/var/build
       - ./sprints:/var/sprints
       - site:/var/app/md2html/site
-      - ./pld-gen/md2html/docs:/var/docs
+      - ./version.json:/var/version.json
     environment:
       - SITE_URL=file:///var/site/index.html
       - BUILD_PATH=/var/build/
     depends_on:
       - chrome
+    ports:
+      - 8000:8000
 
   chrome:
     image: zenika/alpine-chrome:latest
