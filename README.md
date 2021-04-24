@@ -5,7 +5,8 @@ directly from github issue.
 
 ## Install
 
-Before doing anything you have to install the required dependencies by running **install.sh**
+Before doing anything you have to install to install python3
+then install the required dependencies by running **install.sh**
 
 ```shell
 chmod +x ./install.sh
