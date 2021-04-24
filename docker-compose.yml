@@ -6,7 +6,7 @@ services:
       - ./pld-gen:/var/app
       - ./build:/var/build
       - ./sprints:/var/sprints
-      - site:/var/app/md2html/site
+      - site:/var/md2html/site
       - ./version.json:/var/version.json
     environment:
       - SITE_URL=file:///var/site/index.html
