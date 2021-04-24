@@ -40,7 +40,6 @@ with open('/var/md2html/docs/index.md', 'w') as file:
         found = False
         for fileName in fileNames:
             path = '%s/%s/%s' % (sprintPath, folder[1], fileName[0])
-            print(path)
             if os.path.exists(path):
                 found = True
 
