@@ -96,3 +96,6 @@ if __name__ == '__main__':
             def write(str=''):
                 file.write(str+'\n')
             sprint2Markdown(selectedSprint, write)
+        print('Generation done')
+    else:
+        print('Generation cancelled')
