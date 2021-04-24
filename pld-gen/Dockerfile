@@ -5,7 +5,6 @@ RUN apt-get update
 
 COPY ./git2md/requirements.txt .
 COPY ./md2html /var/md2html
-COPY mkdocs_pymdownx_material_extras /var/mkdocs_pymdownx_material_extras
 
 RUN pip3 install -r requirements.txt
 
