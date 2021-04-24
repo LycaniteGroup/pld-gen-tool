@@ -2,6 +2,7 @@ import sys
 import os
 import re
 from pathlib import Path
+import json
 
 sprintNumberPattern = re.compile('Sprint #(\d+)')
 
@@ -19,7 +20,12 @@ for dir in os.listdir('%s' % sprintPath):
 
 folders.sort(key=lambda x: x[0])
 
-with open('/var/docs/index.md', 'w') as file:
+version = {}
+
+with open('/var/version.json', 'r') as versionFile:
+    version = json.loads(versionFile.read())
+
+with open('/var/md2html/docs/index.md', 'w') as file:
     file.write('<!-- ---\n')
     file.write('hide:\n')
     file.write('  - navigation # Hide navigation\n')
@@ -28,7 +34,7 @@ with open('/var/docs/index.md', 'w') as file:
     file.write('\n')
     file.write('![Placeholder](./assets/lycanite.png){: .center align=center style="height:514px;width:389px" }\n')
     file.write('<br>\n')
-    file.write('# **P**roject **L**og **D**ocument <br>**Revision 1**\n')
+    file.write('# **P**roject **L**og **D**ocument <br>**Revision %s**\n' % version.get('revision'))
 
     for folder in folders:
         found = False

@@ -6,7 +6,7 @@ hide:
 
 ![Placeholder](./assets/lycanite.png){: .center align=center style="height:514px;width:389px" }
 <br>
-# **P**roject **L**og **D**ocument <br>**Revision 1**
+# **P**roject **L**og **D**ocument <br>**Revision 2**
 
 ## Sprint #0 (24-03-2021)
 
