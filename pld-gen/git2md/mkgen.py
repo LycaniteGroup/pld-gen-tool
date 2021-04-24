@@ -27,7 +27,7 @@ if __name__ == '__main__':
             'type': 'list',
             'message': 'Select an Authentication method',
             'name': 'authMethod',
-            'choices': ['Username/Password', 'Token'],
+            'choices': ['Token'],
         }, style=style)
     
     
@@ -43,20 +43,6 @@ if __name__ == '__main__':
         ], style=style)
 
         github = Github(result.get('token'))
-    else:
-        result = prompt([
-            {
-                'type': 'input',
-                'message': 'Username',
-                'name': 'username',
-            },
-            {
-                'type': 'password',
-                'message': 'Password',
-                'name': 'password'
-            }
-        ], style=style)
-        github = Github(login_or_token=result.get('username'), password=result.get('password'))
 
     organization = github.get_organization("LycaniteGroup")
 
