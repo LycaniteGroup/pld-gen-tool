@@ -62,10 +62,10 @@
 
 	**Tools**
 
-	| Feature                             | Progress   |
-	| ----------------------------------- | ---------- |
-	| Convert github issues/cards to text | [=0% "0%"] |
-	| PDF Generation tool                 | [=0% "0%"] |
+	| Feature                             | Progress       |
+	| ----------------------------------- | -------------- |
+	| Convert github issues/cards to text | [=100% "100%"] |
+	| PDF Generation tool                 | [=100% "100%"] |
 
 <br>
 
@@ -460,10 +460,10 @@
 
 	**Definition of Done**
 
-	- [ ] Retrieve open and closed issues from github
-	- [ ] Convert issues to proprietary text format
+	- [x] Retrieve open and closed issues from github
+	- [x] Convert issues to proprietary text format
 
-	[=0% "0%"]
+	[=100% "100%"]
 
 !!! info "[PDF Generation tool](https://github.com/LycaniteGroup/pld-gen-tool/issues/2)"
 	| As         | I want                                                     |
@@ -480,9 +480,9 @@
 
 	**Definition of Done**
 
-	- [ ] Parse document and generate PDF
+	- [x] Parse document and generate PDF
 
-	[=0% "0%"]
+	[=100% "100%"]
 
 <br>
 
