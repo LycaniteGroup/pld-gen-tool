@@ -5,7 +5,7 @@ directly from github issue.
 
 ## Install
 
-Before doing anything you have to install python3, docker and docker-compose
+Before doing anything you have to install `python3`, `docker` and `docker-compose`
 then install the required dependencies by running **install.sh**
 
 ```shell
