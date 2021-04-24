@@ -1,0 +1,38 @@
+@page {
+    size: 280mm 3000mm;
+    padding: 0;
+    margin:0mm;
+    border: none;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+ }
+
+ @media print  {
+     
+     /* h2 {
+         page-break-before: avoid
+     }
+     h4 {
+         page-break-before: always;
+         page-break-after: avoid;
+     } */
+ }
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.md-typeset__table {
+    min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+    min-width: 100%;
+}
+
+.md-typeset .admonition-title {
+    margin-bottom: inherit;
+}
+ 

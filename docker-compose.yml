@@ -1,0 +1,26 @@
+version: "3.0"
+services:
+  pld-builder:
+    build: ./pld-gen
+    volumes:
+      - ./pld-gen:/var/app
+      - ./build:/var/build
+      - ./sprints:/var/sprints
+      - site:/var/app/md2html/site
+      - ./pld-gen/md2html/docs:/var/docs
+    environment:
+      - SITE_URL=file:///var/site/index.html
+      - BUILD_PATH=/var/build/
+    depends_on:
+      - chrome
+
+  chrome:
+    image: zenika/alpine-chrome:latest
+    command: [chromium-browser, "--headless", "--disable-gpu", "--no-sandbox", "--remote-debugging-address=0.0.0.0", "--remote-debugging-port=7575", "--disable-translate", "--disable-extensions", "--disable-background-networking", "--disable-sync", "--metrics-recording-only", "--disable-default-apps", "--no-first-run", "--mute-audio", "--hide-scrollbars"]
+    volumes:
+      - site:/var/site
+    ports:
+      - 8080:7575
+
+volumes:
+  site:

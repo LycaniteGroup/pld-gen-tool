@@ -1,0 +1,8 @@
+PyGithub
+PyInquirer
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-mermaid2-plugin
+mkdocs-pymdownx-material-extras
+pymdown-extensions

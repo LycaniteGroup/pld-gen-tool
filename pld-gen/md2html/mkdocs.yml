@@ -1,0 +1,35 @@
+site_name: Lycanite PLD
+
+plugins:
+  - search
+  - mkdocs_pymdownx_material_extras
+  - mermaid2:
+      arguments:
+        theme: 'dark'
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+    - https://unpkg.com/mermaid/dist/mermaid.min.js
+markdown_extensions:
+  - admonition
+  - attr_list
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.progressbar
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  
+theme:
+  name: material
