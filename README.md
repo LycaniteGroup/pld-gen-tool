@@ -1,7 +1,6 @@
 # PLD Generation Tool
 
-The PLD Generation Tool is tool that we made to help us generate good looking pdf
-directly from github issue.
+The PLD Generation Tool is a tool that we made to help us generate good looking pdf files directly from github issues.
 
 ## Install
 
@@ -35,7 +34,7 @@ Enter your github **Token**.
 Next you will be asked to select the sprint you want to convert to Markdown.
 Once done the conversion will begin.
 The converted version of the sprint can be found in folder `sprints/{{Sprint Name}}/index.md` and can be edited before converting it to PDF.
-You can also add a file named `sprints/{{Sprint Name}}/bilan.md`, this fill will be used to add a bilan for the sprint.
+You can also add a file named sprints/{{Sprint Name}}/bilan.md, this file will be used to add a summary of the sprint.
 
 ### Convert from Markdown to PDF
 
@@ -49,7 +48,7 @@ This will run the build pipeline and output the pdf in the `build` folder
 
 #### version.json
 
-This file is used to update the revision number of the PDF, dont forget to bump the version before building the PLD
+This file is used to update the revision number of the PDF, dont forget to increment the version before building the PLD
 
 ```json
 {
