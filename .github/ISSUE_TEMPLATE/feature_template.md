@@ -2,7 +2,7 @@
 name: FEATURE_TEMPLATE
 about: Feature template for roadmap
 title: ''
-labels: ''
+labels: tool
 assignees: ''
 
 ---
