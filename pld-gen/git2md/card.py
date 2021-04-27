@@ -29,6 +29,7 @@ class Card:
         self.people = 0
         self.defdone = []
         self.progress = 0
+        self.done = 0
 
         check = ''
         linejump = True
@@ -70,8 +71,8 @@ class Card:
         if len(self.defdone) > 0:
             for checkbox in self.defdone:
                 if checkbox[0]:
-                    self.progress += 1
-            self.progress /= len(self.defdone)
+                    self.done += 1
+            self.progress = self.done / len(self.defdone)
         
         self.desc = self.desc.strip()
 
@@ -128,3 +129,6 @@ class Card:
 
     def getProgressPercentage(self):
         return self.progress * 100
+    
+    def countFinishedDefinition(self):
+        return self.done

@@ -71,10 +71,21 @@ def featureProgress2Markdown(sprint, callback):
 
             table = [
                 ['Feature'] + [card.getTitle() for card in batchs[i]],
-                ['Progress'] + ['[=%d%% "%d%%"]' % (card.getProgressPercentage(), card.getProgressPercentage()) for card in batchs[i]]
+                ['Progress'] + ['[=%d%% "%d / %d (%d%%)"]' % (card.getProgressPercentage(), card.countFinishedDefinition(), len(card.getDefinitionOfDone()), card.getProgressPercentage()) for card in batchs[i]]
             ]
 
             callback(helper.generateTable(table, linePrefix='\t'))
+            callback()
+            
+            totalDefinitions = sum([len(card.getDefinitionOfDone()) for card in batchs[i]])
+            totalDone = sum([card.countFinishedDefinition() for card in batchs[i]])
+            totalPercent = totalDone / totalDefinitions * 100
+            overallTable = [
+                ['Overall Progress'],
+                ['[=%d%% "%d / %d (%d%%)"]' % (totalPercent, totalDone, totalDefinitions, totalPercent)]
+            ]
+
+            callback(helper.generateTable(overallTable, linePrefix='\t', left=True))
 
             first = False
 
@@ -103,7 +114,7 @@ def card2Markdown(card, callback):
     for check in card.getDefinitionOfDone():
         callback('\t- [%s] %s' % (check[0] and 'x' or ' ', check[1]))
     callback()
-    callback('\t[=%d%% "%d%%"]' % (card.getProgressPercentage(), card.getProgressPercentage()))
+    callback('\t[=%d%% "%d / %d (%d%%)"]' % (card.getProgressPercentage(), card.countFinishedDefinition(), len(card.getDefinitionOfDone()), card.getProgressPercentage()))
 
 def sprintCards2Markdown(sprint, callback):
     batchs = []
