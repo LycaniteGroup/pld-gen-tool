@@ -24,90 +24,64 @@
 !!! tip "Features Progression Status"
 	**Website**
 
-	| Feature                          | Progress   |
-	| -------------------------------- | ---------- |
-	| Landing page mockup              | [=0% "0%"] |
-	| FAQ page mockup                  | [=0% "0%"] |
-	| Download page mockup             | [=0% "0%"] |
-	| Contact page mockup              | [=0% "0%"] |
-	| Website technologies             | [=0% "0%"] |
-	| Development of the landing page  | [=0% "0%"] |
-	| Development of the download page | [=0% "0%"] |
-	| Development of the FAQ page      | [=0% "0%"] |
-	| Development of the contact page  | [=0% "0%"] |
+	| Feature                          | Progress               |
+	| -------------------------------- | ---------------------- |
+	| Download page mockup             | [=0% "0 / 1 (0%)"]     |
+	| Contact page mockup              | [=0% "0 / 1 (0%)"]     |
+	| Development of the landing page  | [=0% "0 / 1 (0%)"]     |
+	| Development of the download page | [=0% "0 / 1 (0%)"]     |
+	| Development of the FAQ page      | [=0% "0 / 1 (0%)"]     |
+	| Development of the contact page  | [=0% "0 / 1 (0%)"]     |
+	| Website technologies             | [=42% "3 / 7 (42%)"]   |
+	| Landing page mockup              | [=100% "1 / 1 (100%)"] |
+	| FAQ page mockup                  | [=100% "1 / 1 (100%)"] |
+
+	| Overall Progress | [=33% "5 / 15 (33%)"] |
+	| :--------------- | :-------------------- |
 
 	<br>
 
 	**Driver**
 
-	| Feature                   | Progress     |
-	| ------------------------- | ------------ |
-	| Stack Library             | [=0% "0%"]   |
-	| Queue Library             | [=0% "0%"]   |
-	| Vector Library            | [=27% "27%"] |
-	| Memory management library | [=0% "0%"]   |
+	| Feature                   | Progress              |
+	| ------------------------- | --------------------- |
+	| Stack Library             | [=0% "0 / 9 (0%)"]    |
+	| Queue Library             | [=0% "0 / 9 (0%)"]    |
+	| Vector Library            | [=33% "4 / 12 (33%)"] |
+	| Memory management library | [=66% "4 / 6 (66%)"]  |
+
+	| Overall Progress | [=22% "8 / 36 (22%)"] |
+	| :--------------- | :-------------------- |
 
 	<br>
 
 	**Application**
 
-	| Feature                        | Progress   |
-	| ------------------------------ | ---------- |
-	| Mockup of the Application      | [=0% "0%"] |
-	| Application Architecture       | [=0% "0%"] |
-	| Mockup of the Application - UX | [=0% "0%"] |
-	| Application Technology         | [=0% "0%"] |
+	| Feature                        | Progress               |
+	| ------------------------------ | ---------------------- |
+	| Application Architecture       | [=0% "0 / 2 (0%)"]     |
+	| Mockup of the Application      | [=100% "2 / 2 (100%)"] |
+	| Mockup of the Application - UX | [=66% "2 / 3 (66%)"]   |
+	| Application Technology         | [=33% "1 / 3 (33%)"]   |
+
+	| Overall Progress | [=50% "5 / 10 (50%)"] |
+	| :--------------- | :-------------------- |
 
 	<br>
 
 	**Tools**
 
-	| Feature                             | Progress       |
-	| ----------------------------------- | -------------- |
-	| Convert github issues/cards to text | [=100% "100%"] |
-	| PDF Generation tool                 | [=100% "100%"] |
+	| Feature                             | Progress               |
+	| ----------------------------------- | ---------------------- |
+	| Convert github issues/cards to text | [=100% "6 / 6 (100%)"] |
+	| PDF Generation tool                 | [=100% "5 / 5 (100%)"] |
+
+	| Overall Progress | [=100% "11 / 11 (100%)"] |
+	| :--------------- | :----------------------- |
 
 <br>
 
 #### Website
-
-!!! info "[Landing page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/3)"
-	| As         | I want                       |
-	| :--------- | :--------------------------- |
-	| developper | a mockup of the landing page |
-
-	| Description                                                                                                                      |
-	| :------------------------------------------------------------------------------------------------------------------------------- |
-	| Have a mockup of the landing page that suits the entire group so we have a streamlined view of what the website should look like |
-
-	| Working Day(s) | Working People(s) |
-	| :------------: | :---------------: |
-	| 2              | 1                 |
-
-	**Definition of Done**
-
-	- [ ] A basic mockup of the landing page
-
-	[=0% "0%"]
-
-!!! info "[FAQ page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/4)"
-	| As         | I want                   |
-	| :--------- | :----------------------- |
-	| developper | a mockup of the FAQ page |
-
-	| Description                                                                                                                  |
-	| :--------------------------------------------------------------------------------------------------------------------------- |
-	| Have a mockup of the FAQ page that suits the entire group so we have a streamlined view of what the website should look like |
-
-	| Working Day(s) | Working People(s) |
-	| :------------: | :---------------: |
-	| 2              | 1                 |
-
-	**Definition of Done**
-
-	- [ ] A basic mockup of the FAQ page
-
-	[=0% "0%"]
 
 !!! info "[Download page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/5)"
 	| As         | I want                        |
@@ -126,7 +100,7 @@
 
 	- [ ] A basic mockup of the download page
 
-	[=0% "0%"]
+	[=0% "0 / 1 (0%)"]
 
 !!! info "[Contact page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/6)"
 	| As         | I want                       |
@@ -145,28 +119,7 @@
 
 	- [ ] A basic mockup of the contact page
 
-	[=0% "0%"]
-
-!!! info "[Website technologies](https://github.com/LycaniteGroup/LycaniteWebsite/issues/7)"
-	| As             | I want                                                        |
-	| :------------- | :------------------------------------------------------------ |
-	| web developper | a global view of all of the web technologies available to use |
-
-	| Description                                                                                                                                                                              |
-	| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-	| Before starting development on the website, we need to choose technologies adapted to our needs based on their features. Keep in mind, the website is just a showcase one and not an app |
-
-	| Working Day(s) | Working People(s) |
-	| :------------: | :---------------: |
-	| 2              | 3                 |
-
-	**Definition of Done**
-
-	- [ ] Look for different technologies
-	- [ ] Test the different technologies
-	- [ ] Getting used to them
-
-	[=0% "0%"]
+	[=0% "0 / 1 (0%)"]
 
 !!! info "[Development of the landing page](https://github.com/LycaniteGroup/LycaniteWebsite/issues/8)"
 	| As         | I want                      |
@@ -185,7 +138,7 @@
 
 	- [ ] Development of the landing page
 
-	[=0% "0%"]
+	[=0% "0 / 1 (0%)"]
 
 !!! info "[Development of the download page](https://github.com/LycaniteGroup/LycaniteWebsite/issues/9)"
 	| As         | I want                       |
@@ -204,7 +157,7 @@
 
 	- [ ] Development of the download page
 
-	[=0% "0%"]
+	[=0% "0 / 1 (0%)"]
 
 !!! info "[Development of the FAQ page](https://github.com/LycaniteGroup/LycaniteWebsite/issues/10)"
 	| As         | I want                  |
@@ -223,7 +176,7 @@
 
 	- [ ] Development of the FAQ page
 
-	[=0% "0%"]
+	[=0% "0 / 1 (0%)"]
 
 !!! info "[Development of the contact page](https://github.com/LycaniteGroup/LycaniteWebsite/issues/11)"
 	| As         | I want                      |
@@ -242,7 +195,70 @@
 
 	- [ ] Development of the contact page
 
-	[=0% "0%"]
+	[=0% "0 / 1 (0%)"]
+
+!!! info "[Website technologies](https://github.com/LycaniteGroup/LycaniteWebsite/issues/7)"
+	| As             | I want                                                        |
+	| :------------- | :------------------------------------------------------------ |
+	| web developper | a global view of all of the web technologies available to use |
+
+	| Description                                                                                                                                                                              |
+	| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+	| Before starting development on the website, we need to choose technologies adapted to our needs based on their features. Keep in mind, the website is just a showcase one and not an app |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 3                 |
+
+	**Definition of Done**
+
+	- [x] Look for different technologies
+	- [x] Getting started NextJS
+	- [x] Getting started ReactJS
+	- [ ] Getting started Flutter
+	- [ ] Getting started Angular
+	- [ ] Test the different technologies
+	- [ ] Getting used to them
+
+	[=42% "3 / 7 (42%)"]
+
+!!! info "[Landing page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/3)"
+	| As         | I want                       |
+	| :--------- | :--------------------------- |
+	| developper | a mockup of the landing page |
+
+	| Description                                                                                                                      |
+	| :------------------------------------------------------------------------------------------------------------------------------- |
+	| Have a mockup of the landing page that suits the entire group so we have a streamlined view of what the website should look like |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [x] A basic mockup of the landing page
+
+	[=100% "1 / 1 (100%)"]
+
+!!! info "[FAQ page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/4)"
+	| As         | I want                   |
+	| :--------- | :----------------------- |
+	| developper | a mockup of the FAQ page |
+
+	| Description                                                                                                                  |
+	| :--------------------------------------------------------------------------------------------------------------------------- |
+	| Have a mockup of the FAQ page that suits the entire group so we have a streamlined view of what the website should look like |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [x] A basic mockup of the FAQ page
+
+	[=100% "1 / 1 (100%)"]
 
 <br>
 
@@ -273,7 +289,7 @@
 	- [ ] Documentation
 	- [ ] Tests
 
-	[=0% "0%"]
+	[=0% "0 / 9 (0%)"]
 
 !!! info "[Queue Library](https://github.com/LycaniteGroup/LycaniteDriver/issues/4)"
 	| As                 | I want                            |
@@ -300,7 +316,7 @@
 	- [ ] Documentation
 	- [ ] Tests
 
-	[=0% "0%"]
+	[=0% "0 / 9 (0%)"]
 
 !!! info "[Vector Library](https://github.com/LycaniteGroup/LycaniteDriver/issues/2)"
 	| As                 | I want                            |
@@ -317,19 +333,20 @@
 
 	**Definition of Done**
 
-	- [x] Inserting elements
+	- [x] Assignation elements
+	- [ ] Inserting elements
 	- [ ] Deleting elements
 	- [x] Access to an element from an index
 	- [ ] Vector sorting
 	- [x] Automatic enlargement before overflow
-	- [ ] Ability to reserve the size of a Vector
-	- [ ] Memory Efficient and Safe
+	- [x] Ability to reserve the size of a Vector
 	- [ ] Binary search
-	- [ ] Works in the Kernel
 	- [ ] Documentation
 	- [ ] Tests
+	- [ ] Works in the Kernel
+	- [ ] Memory Efficient and Safe
 
-	[=27% "27%"]
+	[=33% "4 / 12 (33%)"]
 
 !!! info "[Memory management library](https://github.com/LycaniteGroup/LycaniteDriver/issues/1)"
 	| As                 | I want                                                                             |
@@ -346,38 +363,18 @@
 
 	**Definition of Done**
 
-	- [ ] Allocations, frees
-	- [ ] Reallocations
-	- [ ] Memory copies
-	- [ ] Memory moves
+	- [x] Allocations, frees
+	- [x] Reallocations
+	- [x] Memory copies
+	- [x] Memory moves
 	- [ ] Memory monitoring
 	- [ ] Tests
 
-	[=0% "0%"]
+	[=66% "4 / 6 (66%)"]
 
 <br>
 
 #### Application
-
-!!! info "[Mockup of the Application](https://github.com/LycaniteGroup/LycaniteApplication/issues/1)"
-	| As                  | I want                                               |
-	| :------------------ | :--------------------------------------------------- |
-	| Lycanite Developper | A model of the application to facilitate development |
-
-	| Description                                                                                                                              |
-	| :--------------------------------------------------------------------------------------------------------------------------------------- |
-	| This model must be as User Friendly as possible to make its use simple and fast without disturbing the user. It will allow a faster use. |
-
-	| Working Day(s) | Working People(s) |
-	| :------------: | :---------------: |
-	| 3              | 3                 |
-
-	**Definition of Done**
-
-	- [ ] Have the Lycanite color chart
-	- [ ] Find a simple, smooth and interactive style with the chosen technology
-
-	[=0% "0%"]
 
 !!! info "[Application Architecture](https://github.com/LycaniteGroup/LycaniteApplication/issues/2)"
 	| As                 | I want                                                                                                             |
@@ -397,7 +394,27 @@
 	- [ ] Take into account the needs of the technologies chosen for our architecture.
 	- [ ] Creation of schematics and documentation detailing the architecture of the application and allowing other developers to understand its logic
 
-	[=0% "0%"]
+	[=0% "0 / 2 (0%)"]
+
+!!! info "[Mockup of the Application](https://github.com/LycaniteGroup/LycaniteApplication/issues/1)"
+	| As                  | I want                                               |
+	| :------------------ | :--------------------------------------------------- |
+	| Lycanite Developper | A model of the application to facilitate development |
+
+	| Description                                                                                                                              |
+	| :--------------------------------------------------------------------------------------------------------------------------------------- |
+	| This model must be as User Friendly as possible to make its use simple and fast without disturbing the user. It will allow a faster use. |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 3              | 3                 |
+
+	**Definition of Done**
+
+	- [x] Have the Lycanite color chart
+	- [x] Find a simple, smooth and interactive style with the chosen technology
+
+	[=100% "2 / 2 (100%)"]
 
 !!! info "[Mockup of the Application - UX](https://github.com/LycaniteGroup/LycaniteApplication/issues/3)"
 	| As                  | I want                                               |
@@ -414,11 +431,11 @@
 
 	**Definition of Done**
 
-	- [ ] UX File permissions
-	- [ ] UX Opening applications in Lycanite
+	- [x] UX File permissions
+	- [x] UX Opening applications in Lycanite
 	- [ ] UX Opening and writing permissions
 
-	[=0% "0%"]
+	[=66% "2 / 3 (66%)"]
 
 !!! info "[Application Technology ](https://github.com/LycaniteGroup/LycaniteApplication/issues/4)"
 	| As                 | I want                                                                              |
@@ -435,11 +452,11 @@
 
 	**Definition of Done**
 
-	- [ ] Research of existing technologies.
+	- [x] Research of existing technologies.
 	- [ ] Testing the technologies to see if they allow us to achieve our objectives.
 	- [ ] Acclimatisation to the technology
 
-	[=0% "0%"]
+	[=33% "1 / 3 (33%)"]
 
 <br>
 
@@ -460,10 +477,14 @@
 
 	**Definition of Done**
 
+	- [x] Use github api with Token
+	- [x] Retrieve organisation repositories 
+	- [x] Retrieve Sprint
 	- [x] Retrieve open and closed issues from github
-	- [x] Convert issues to proprietary text format
+	- [x] Parse github Issues
+	- [x] Convert issues to Markdown
 
-	[=100% "100%"]
+	[=100% "6 / 6 (100%)"]
 
 !!! info "[PDF Generation tool](https://github.com/LycaniteGroup/pld-gen-tool/issues/2)"
 	| As         | I want                                                     |
@@ -480,9 +501,13 @@
 
 	**Definition of Done**
 
-	- [x] Parse document and generate PDF
+	- [x] Parse Markdown
+	- [x] Convert Markdown to HTML using Mkdocs
+	- [x] Convert HTML page to PDF
+	- [x] Make docker images
+	- [x] Make script to help automation
 
-	[=100% "100%"]
+	[=100% "5 / 5 (100%)"]
 
 <br>
 
