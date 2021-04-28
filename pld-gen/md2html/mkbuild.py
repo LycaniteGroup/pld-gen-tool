@@ -37,6 +37,11 @@ with open('/var/md2html/docs/index.md', 'w') as file:
     file.write('![Placeholder](./assets/lycanite.png){: .center align=center style="height:514px;width:389px" }\n')
     file.write('<br>\n')
     file.write('# **P**roject **L**og **D**ocument <br>**Revision %s (%s)**\n' % (version.get('revision'), now.strftime('%d-%m-%Y')))
+    file.write('\n')
+    file.write('## Summary\n')
+    file.write('\n')
+    file.write('[TOC]')
+
 
     for folder in folders:
         found = False

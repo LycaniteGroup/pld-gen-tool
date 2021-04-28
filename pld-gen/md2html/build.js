@@ -21,7 +21,7 @@ const version = JSON.parse(fs.readFileSync('/var/version.json'));
     const pdf = await htmlPdf.create(url, options);
     const date = new Date();
     const now = `${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`;
-    const name = process.env['BUILD_NAME'] || `PLD-Reversion-${version.revision}` || `${now}`;
+    const name = process.env['BUILD_NAME'] || `PLD-Revision-${version.revision}` || `${now}`;
     const buildPath = `${process.env['BUILD_PATH'] || '../build'}`;
     await pdf.toFile(`${buildPath}/${name}.pdf`);
     console.log(`Finished building ${name}.pdf`);

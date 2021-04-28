@@ -1,3 +1,6 @@
+import re
+_nonAlphaPattern = re.compile("[^0-9a-zA-Z]+")
+
 def generateTable(table, linePrefix='', left=False, right=False, center=False):
     mdtable = ''
 
@@ -42,3 +45,16 @@ def parseInt(value, default=0):
         return int(value)
     except:
         return default
+
+def anchor(elements):
+    return '-'.join(
+        list(
+            map(
+                lambda x: 
+                    _nonAlphaPattern.sub('-', str(x))
+                    .strip('-'),
+                elements
+            )
+        )
+    )
+    

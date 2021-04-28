@@ -70,7 +70,7 @@ def featureProgress2Markdown(sprint, callback):
             callback()
 
             table = [
-                ['Feature'] + [card.getTitle() for card in batchs[i]],
+                ['Feature'] + ['[%s](#%s)' % (card.getTitle(), helper.anchor([sprint.getName(), predicates[i][0], card.getTitle()])) for card in batchs[i]],
                 ['Progress'] + ['[=%d%% "%d / %d (%d%%)"]' % (card.getProgressPercentage(), card.countFinishedDefinition(), len(card.getDefinitionOfDone()), card.getProgressPercentage()) for card in batchs[i]]
             ]
 
@@ -130,6 +130,7 @@ def sprintCards2Markdown(sprint, callback):
             callback('#### %s' % predicates[i][0])
             for card in batchs[i]:
                 callback()
+                callback('<a id="%s"></a>' % helper.anchor([sprint.getName(), predicates[i][0], card.getTitle()]))
                 card2Markdown(card, callback)
             callback()
             callback('<br>')
