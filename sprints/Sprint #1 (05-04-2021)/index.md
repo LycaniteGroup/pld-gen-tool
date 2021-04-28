@@ -1,0 +1,532 @@
+!!! note "Diagram"
+
+	```mermaid
+	flowchart TD
+		classDef inprogress fill:#0c7dba;
+		subgraph Legende
+			InProgress[En cours ce sprint]:::inprogress 
+		end
+	```
+	```mermaid
+	flowchart TD
+		classDef inprogress fill:#0c7dba;
+
+		Lycanite[Lycanite]:::inprogress --> Website[Website]:::inprogress
+		Lycanite --> Solution[Solution]:::inprogress
+		Website --> Front[Frontend]
+		Website --> Back[Backend]
+		Solution --> Application[Application]:::inprogress
+		Solution --> VFS[Virtual File System]
+		Solution --> Service[Service]
+		Solution --> KernelDriver[Kernel Driver]:::inprogress
+	```
+
+!!! tip "Features Progression Status"
+	**Website**
+
+	| Feature                                                                                           | Progress               |
+	| ------------------------------------------------------------------------------------------------- | ---------------------- |
+	| [Download page mockup](#Sprint-1-05-04-2021-Website-Download-page-mockup)                         | [=0% "0 / 1 (0%)"]     |
+	| [Contact page mockup](#Sprint-1-05-04-2021-Website-Contact-page-mockup)                           | [=0% "0 / 1 (0%)"]     |
+	| [Development of the landing page](#Sprint-1-05-04-2021-Website-Development-of-the-landing-page)   | [=0% "0 / 1 (0%)"]     |
+	| [Development of the download page](#Sprint-1-05-04-2021-Website-Development-of-the-download-page) | [=0% "0 / 1 (0%)"]     |
+	| [Development of the FAQ page](#Sprint-1-05-04-2021-Website-Development-of-the-FAQ-page)           | [=0% "0 / 1 (0%)"]     |
+	| [Development of the contact page](#Sprint-1-05-04-2021-Website-Development-of-the-contact-page)   | [=0% "0 / 1 (0%)"]     |
+	| [Website technologies](#Sprint-1-05-04-2021-Website-Website-technologies)                         | [=42% "3 / 7 (42%)"]   |
+	| [Landing page mockup](#Sprint-1-05-04-2021-Website-Landing-page-mockup)                           | [=100% "1 / 1 (100%)"] |
+	| [FAQ page mockup](#Sprint-1-05-04-2021-Website-FAQ-page-mockup)                                   | [=100% "1 / 1 (100%)"] |
+
+	| Overall Progress | [=33% "5 / 15 (33%)"] |
+	| :--------------- | :-------------------- |
+
+	<br>
+
+	**Driver**
+
+	| Feature                                                                            | Progress              |
+	| ---------------------------------------------------------------------------------- | --------------------- |
+	| [Stack Library](#Sprint-1-05-04-2021-Driver-Stack-Library)                         | [=0% "0 / 9 (0%)"]    |
+	| [Queue Library](#Sprint-1-05-04-2021-Driver-Queue-Library)                         | [=0% "0 / 9 (0%)"]    |
+	| [Vector Library](#Sprint-1-05-04-2021-Driver-Vector-Library)                       | [=33% "4 / 12 (33%)"] |
+	| [Memory management library](#Sprint-1-05-04-2021-Driver-Memory-management-library) | [=66% "4 / 6 (66%)"]  |
+
+	| Overall Progress | [=22% "8 / 36 (22%)"] |
+	| :--------------- | :-------------------- |
+
+	<br>
+
+	**Application**
+
+	| Feature                                                                                         | Progress               |
+	| ----------------------------------------------------------------------------------------------- | ---------------------- |
+	| [Application Architecture](#Sprint-1-05-04-2021-Application-Application-Architecture)           | [=0% "0 / 2 (0%)"]     |
+	| [Mockup of the Application](#Sprint-1-05-04-2021-Application-Mockup-of-the-Application)         | [=100% "2 / 2 (100%)"] |
+	| [Mockup of the Application - UX](#Sprint-1-05-04-2021-Application-Mockup-of-the-Application-UX) | [=66% "2 / 3 (66%)"]   |
+	| [Application Technology ](#Sprint-1-05-04-2021-Application-Application-Technology)              | [=33% "1 / 3 (33%)"]   |
+
+	| Overall Progress | [=50% "5 / 10 (50%)"] |
+	| :--------------- | :-------------------- |
+
+	<br>
+
+	**Tools**
+
+	| Feature                                                                                               | Progress               |
+	| ----------------------------------------------------------------------------------------------------- | ---------------------- |
+	| [Convert github issues/cards to text](#Sprint-1-05-04-2021-Tools-Convert-github-issues-cards-to-text) | [=100% "6 / 6 (100%)"] |
+	| [PDF Generation tool](#Sprint-1-05-04-2021-Tools-PDF-Generation-tool)                                 | [=100% "5 / 5 (100%)"] |
+
+	| Overall Progress | [=100% "11 / 11 (100%)"] |
+	| :--------------- | :----------------------- |
+
+<br>
+
+#### Website
+
+<a id="Sprint-1-05-04-2021-Website-Download-page-mockup"></a>
+!!! info "[Download page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/5)"
+	| As         | I want                        |
+	| :--------- | :---------------------------- |
+	| developper | a mockup of the download page |
+
+	| Description                                                                                                                       |
+	| :-------------------------------------------------------------------------------------------------------------------------------- |
+	| Have a mockup of the download page that suits the entire group so we have a streamlined view of what the website should look like |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [ ] A basic mockup of the download page
+
+	[=0% "0 / 1 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Website-Contact-page-mockup"></a>
+!!! info "[Contact page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/6)"
+	| As         | I want                       |
+	| :--------- | :--------------------------- |
+	| developper | a mockup of the contact page |
+
+	| Description                                                                                                                      |
+	| :------------------------------------------------------------------------------------------------------------------------------- |
+	| Have a mockup of the contact page that suits the entire group so we have a streamlined view of what the website should look like |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [ ] A basic mockup of the contact page
+
+	[=0% "0 / 1 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Website-Development-of-the-landing-page"></a>
+!!! info "[Development of the landing page](https://github.com/LycaniteGroup/LycaniteWebsite/issues/8)"
+	| As         | I want                      |
+	| :--------- | :-------------------------- |
+	| developper | to program the landing page |
+
+	| Description                                          |
+	| :--------------------------------------------------- |
+	| Development of the landing page based on it's mockup |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [ ] Development of the landing page
+
+	[=0% "0 / 1 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Website-Development-of-the-download-page"></a>
+!!! info "[Development of the download page](https://github.com/LycaniteGroup/LycaniteWebsite/issues/9)"
+	| As         | I want                       |
+	| :--------- | :--------------------------- |
+	| developper | to program the download page |
+
+	| Description                                           |
+	| :---------------------------------------------------- |
+	| Development of the download page based on it's mockup |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [ ] Development of the download page
+
+	[=0% "0 / 1 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Website-Development-of-the-FAQ-page"></a>
+!!! info "[Development of the FAQ page](https://github.com/LycaniteGroup/LycaniteWebsite/issues/10)"
+	| As         | I want                  |
+	| :--------- | :---------------------- |
+	| developper | to program the FAQ page |
+
+	| Description                                      |
+	| :----------------------------------------------- |
+	| Development of the FAQ page based on it's mockup |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [ ] Development of the FAQ page
+
+	[=0% "0 / 1 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Website-Development-of-the-contact-page"></a>
+!!! info "[Development of the contact page](https://github.com/LycaniteGroup/LycaniteWebsite/issues/11)"
+	| As         | I want                      |
+	| :--------- | :-------------------------- |
+	| developper | to program the contact page |
+
+	| Description                                          |
+	| :--------------------------------------------------- |
+	| Development of the contact page based on it's mockup |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [ ] Development of the contact page
+
+	[=0% "0 / 1 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Website-Website-technologies"></a>
+!!! info "[Website technologies](https://github.com/LycaniteGroup/LycaniteWebsite/issues/7)"
+	| As             | I want                                                        |
+	| :------------- | :------------------------------------------------------------ |
+	| web developper | a global view of all of the web technologies available to use |
+
+	| Description                                                                                                                                                                              |
+	| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+	| Before starting development on the website, we need to choose technologies adapted to our needs based on their features. Keep in mind, the website is just a showcase one and not an app |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 3                 |
+
+	**Definition of Done**
+
+	- [x] Look for different technologies
+	- [x] Getting started NextJS
+	- [x] Getting started ReactJS
+	- [ ] Getting started Flutter
+	- [ ] Getting started Angular
+	- [ ] Test the different technologies
+	- [ ] Getting used to them
+
+	[=42% "3 / 7 (42%)"]
+
+<a id="Sprint-1-05-04-2021-Website-Landing-page-mockup"></a>
+!!! info "[Landing page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/3)"
+	| As         | I want                       |
+	| :--------- | :--------------------------- |
+	| developper | a mockup of the landing page |
+
+	| Description                                                                                                                      |
+	| :------------------------------------------------------------------------------------------------------------------------------- |
+	| Have a mockup of the landing page that suits the entire group so we have a streamlined view of what the website should look like |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [x] A basic mockup of the landing page
+
+	[=100% "1 / 1 (100%)"]
+
+<a id="Sprint-1-05-04-2021-Website-FAQ-page-mockup"></a>
+!!! info "[FAQ page mockup](https://github.com/LycaniteGroup/LycaniteWebsite/issues/4)"
+	| As         | I want                   |
+	| :--------- | :----------------------- |
+	| developper | a mockup of the FAQ page |
+
+	| Description                                                                                                                  |
+	| :--------------------------------------------------------------------------------------------------------------------------- |
+	| Have a mockup of the FAQ page that suits the entire group so we have a streamlined view of what the website should look like |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 2              | 1                 |
+
+	**Definition of Done**
+
+	- [x] A basic mockup of the FAQ page
+
+	[=100% "1 / 1 (100%)"]
+
+<br>
+
+#### Driver
+
+<a id="Sprint-1-05-04-2021-Driver-Stack-Library"></a>
+!!! info "[Stack Library](https://github.com/LycaniteGroup/LycaniteDriver/issues/3)"
+	| As                 | I want                            |
+	| :----------------- | :-------------------------------- |
+	| Lycanite Developer | Have a Stack library ready to use |
+
+	| Description                                                                                                                                                                                                                                                                                                                                            |
+	| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+	| A stack is an abstract data type that serves as a collection of elements, with two main principal operations:<br><br>   - Push, which adds an element to the collection, and<br>   - Pop, which removes the most recently added element that was not yet removed.<br><br>We have to recreate a new stack because there is none natively in the kernel. |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 10             | 1                 |
+
+	**Definition of Done**
+
+	- [ ] Insert element at the beginning
+	- [ ] Take out the first element
+	- [ ] Sort the Stack
+	- [ ] Automatic expansion before overflow
+	- [ ] Memory Efficient and Safe
+	- [ ] Works in the Kernel
+	- [ ] Be able to reserve the size of a Stack
+	- [ ] Documentation
+	- [ ] Tests
+
+	[=0% "0 / 9 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Driver-Queue-Library"></a>
+!!! info "[Queue Library](https://github.com/LycaniteGroup/LycaniteDriver/issues/4)"
+	| As                 | I want                            |
+	| :----------------- | :-------------------------------- |
+	| Lycanite Developer | Have a Queue library ready to use |
+
+	| Description                                                                                                                                                                     |
+	| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+	| A queue is a data structure in which elements are removed in the same order they were entered.<br>We have to recreate a new queue because there is none natively in the kernel. |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 10             | 1                 |
+
+	**Definition of Done**
+
+	- [ ] Inserting elements at the end
+	- [ ] Take out the first element
+	- [ ] Sorted the Tail
+	- [ ] Automatic enlargement before overflow
+	- [ ] Memory Efficient and Safe
+	- [ ] Works in the Kernel
+	- [ ] Be able to reserve the size of a Queue
+	- [ ] Documentation
+	- [ ] Tests
+
+	[=0% "0 / 9 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Driver-Vector-Library"></a>
+!!! info "[Vector Library](https://github.com/LycaniteGroup/LycaniteDriver/issues/2)"
+	| As                 | I want                            |
+	| :----------------- | :-------------------------------- |
+	| Lycanite Developer | Have a Queue library ready to use |
+
+	| Description                                                                    |
+	| :----------------------------------------------------------------------------- |
+	| We have to recreate a new vector because there is none natively in the kernel. |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 10             | 1                 |
+
+	**Definition of Done**
+
+	- [x] Assignation elements
+	- [ ] Inserting elements
+	- [ ] Deleting elements
+	- [x] Access to an element from an index
+	- [ ] Vector sorting
+	- [x] Automatic enlargement before overflow
+	- [x] Ability to reserve the size of a Vector
+	- [ ] Binary search
+	- [ ] Documentation
+	- [ ] Tests
+	- [ ] Works in the Kernel
+	- [ ] Memory Efficient and Safe
+
+	[=33% "4 / 12 (33%)"]
+
+<a id="Sprint-1-05-04-2021-Driver-Memory-management-library"></a>
+!!! info "[Memory management library](https://github.com/LycaniteGroup/LycaniteDriver/issues/1)"
+	| As                 | I want                                                                             |
+	| :----------------- | :--------------------------------------------------------------------------------- |
+	| Lycanite developer | a cross-platform memory management library that allows me to manage memory easily. |
+
+	| Description                                                                                                                |
+	| :------------------------------------------------------------------------------------------------------------------------- |
+	| We need to have a cross platform memory management library in order to easily manage the memory on the kernel driver side. |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 6              | 1                 |
+
+	**Definition of Done**
+
+	- [x] Allocations, frees
+	- [x] Reallocations
+	- [x] Memory copies
+	- [x] Memory moves
+	- [ ] Memory monitoring
+	- [ ] Tests
+
+	[=66% "4 / 6 (66%)"]
+
+<br>
+
+#### Application
+
+<a id="Sprint-1-05-04-2021-Application-Application-Architecture"></a>
+!!! info "[Application Architecture](https://github.com/LycaniteGroup/LycaniteApplication/issues/2)"
+	| As                 | I want                                                                                                             |
+	| :----------------- | :----------------------------------------------------------------------------------------------------------------- |
+	| Lycanite Developer | Have an architecture allowing the creation of the application according to the model with the chosen technologies. |
+
+	| Description                                                                                                                                                                                                                                                              |
+	| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+	| Once the technology has been found, an architecture is needed to facilitate the development of the application so that, over time, it is easy to find its way around.<br>The architecture must allow the efficient implementation of new features not originally planned |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 10             | 3                 |
+
+	**Definition of Done**
+
+	- [ ] Take into account the needs of the technologies chosen for our architecture.
+	- [ ] Creation of schematics and documentation detailing the architecture of the application and allowing other developers to understand its logic
+
+	[=0% "0 / 2 (0%)"]
+
+<a id="Sprint-1-05-04-2021-Application-Mockup-of-the-Application"></a>
+!!! info "[Mockup of the Application](https://github.com/LycaniteGroup/LycaniteApplication/issues/1)"
+	| As                  | I want                                               |
+	| :------------------ | :--------------------------------------------------- |
+	| Lycanite Developper | A model of the application to facilitate development |
+
+	| Description                                                                                                                              |
+	| :--------------------------------------------------------------------------------------------------------------------------------------- |
+	| This model must be as User Friendly as possible to make its use simple and fast without disturbing the user. It will allow a faster use. |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 3              | 3                 |
+
+	**Definition of Done**
+
+	- [x] Have the Lycanite color chart
+	- [x] Find a simple, smooth and interactive style with the chosen technology
+
+	[=100% "2 / 2 (100%)"]
+
+<a id="Sprint-1-05-04-2021-Application-Mockup-of-the-Application-UX"></a>
+!!! info "[Mockup of the Application - UX](https://github.com/LycaniteGroup/LycaniteApplication/issues/3)"
+	| As                  | I want                                               |
+	| :------------------ | :--------------------------------------------------- |
+	| Lycanite Developper | A model of the application to facilitate development |
+
+	| Description                                                                                                                                             |
+	| :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+	| This model must be as User Friendly as possible to make its use simple and fast without disturbing the user, for that, a good UX will be very important |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 9              | 3                 |
+
+	**Definition of Done**
+
+	- [x] UX File permissions
+	- [x] UX Opening applications in Lycanite
+	- [ ] UX Opening and writing permissions
+
+	[=66% "2 / 3 (66%)"]
+
+<a id="Sprint-1-05-04-2021-Application-Application-Technology"></a>
+!!! info "[Application Technology ](https://github.com/LycaniteGroup/LycaniteApplication/issues/4)"
+	| As                 | I want                                                                              |
+	| :----------------- | :---------------------------------------------------------------------------------- |
+	| Lycanite Developer | Have an overview of the different technologies available to develop the application |
+
+	| Description                                                                                                                                                                                     |
+	| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+	| To start the development of the Application from the mock-up in the most efficient way we need to be able to choose between the different existing technologies knowing their proposed features |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 6              | 3                 |
+
+	**Definition of Done**
+
+	- [x] Research of existing technologies.
+	- [ ] Testing the technologies to see if they allow us to achieve our objectives.
+	- [ ] Acclimatisation to the technology
+
+	[=33% "1 / 3 (33%)"]
+
+<br>
+
+#### Tools
+
+<a id="Sprint-1-05-04-2021-Tools-Convert-github-issues-cards-to-text"></a>
+!!! info "[Convert github issues/cards to text](https://github.com/LycaniteGroup/pld-gen-tool/issues/1)"
+	| As                 | I want                                                           |
+	| :----------------- | :--------------------------------------------------------------- |
+	| Lycanite Developer | I want to generate text from github issues and cards I created | |
+
+	| Description                                                                                                                              |
+	| :--------------------------------------------------------------------------------------------------------------------------------------- |
+	| I want to have a tool that converts github issues/cards into a text file format that can be easily understood and edited by team members |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 5              | 1                 |
+
+	**Definition of Done**
+
+	- [x] Use github api with Token
+	- [x] Retrieve organisation repositories 
+	- [x] Retrieve Sprint
+	- [x] Retrieve open and closed issues from github
+	- [x] Parse github Issues
+	- [x] Convert issues to Markdown
+
+	[=100% "6 / 6 (100%)"]
+
+<a id="Sprint-1-05-04-2021-Tools-PDF-Generation-tool"></a>
+!!! info "[PDF Generation tool](https://github.com/LycaniteGroup/pld-gen-tool/issues/2)"
+	| As         | I want                                                     |
+	| :--------- | :--------------------------------------------------------- |
+	| Developper | A tool capable of generating a PDF file based on the PLD | |
+
+	| Description                                              |
+	| :------------------------------------------------------- |
+	| A tool capable of reading a text and generate a PDF file |
+
+	| Working Day(s) | Working People(s) |
+	| :------------: | :---------------: |
+	| 5              | 1                 |
+
+	**Definition of Done**
+
+	- [x] Parse Markdown
+	- [x] Convert Markdown to HTML using Mkdocs
+	- [x] Convert HTML page to PDF
+	- [x] Make docker images
+	- [x] Make script to help automation
+
+	[=100% "5 / 5 (100%)"]
+
+<br>
+
